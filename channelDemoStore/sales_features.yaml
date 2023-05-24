@@ -1,0 +1,10 @@
+- name: netStoreSales
+  base_col: col('ss_net_paid')
+  filter: col('ss_net_paid') > 0
+  negative_value: 0
+  agg_func: sum
+- name: total_quantity
+  base_col: col('ss_quantity')
+  filter: col('ss_quantity') > 0
+  negative_value: 0
+  agg_func: sum
